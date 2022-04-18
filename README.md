@@ -14,24 +14,10 @@
 <hr>
 
 <p align="center">
-  <b>AUR:</b>
-  <a href="https://aur.archlinux.org/packages/mpd-rich-presence-discord-git/" target="_blank">
-    <img src="http://badge.kloud51.com/aur/v/mpd-rich-presence-discord-git.svg" alt="AUR Version"/>
-  </a>
-  
-  <a href="https://aur.archlinux.org/packages/mpd-rich-presence-discord-git/" target="_blank">
-    <img src="http://badge.kloud51.com/aur/s/mpd-rich-presence-discord-git.svg" alt="AUR Status"/>
-  </a>
-  
-  <a href="https://aur.archlinux.org/packages/mpd-rich-presence-discord-git/" target="_blank">
-    <img src="http://badge.kloud51.com/aur/m/mpd-rich-presence-discord-git.svg" alt="AUR Status"/>
-  </a>
   
   <dl>
     <dt><a href="#images">Images</a></dt>
     <dd><a href="#single-app-mode">Single App Mode</a></dd>
-    <dd><a href="#multi-app-mode">Multi App Mode</a></dd>
-    <dt><a href="#multi-app-vs-single-app-mode">Multi App vs Single App Mode</a></dt>
     <dt><a href="#command-line-arguments">Command Line Arguments</a></dt>
     <dt><a href="#compiling">Compiling</a></dt>
     <dt><a href="#similar">Similar</a></dt>
@@ -48,34 +34,7 @@
 | :-: | :-: |
 | Playing | ![Playing](assets/readme/single-playing.png)
 | Paused | ![Paused](assets/readme/single-paused.png)
-| Idle | ![Idle](assets/readme/single-idle.png)
 
-### Multi App Mode
-
-| State | Image |
-| :-: | :-: |
-| Playing | ![Playing](assets/readme/multi-playing.png)
-| Paused | ![Paused](assets/readme/multi-paused.png)
-| Idle | ![Idle](assets/readme/multi-idle.png)
-
----
-
-## Multi App vs Single App Mode
-* Single App Mode
-
-  * This mode will only use a single MPD app, which will diplay the three different MPD states. (Playing, Paused and Idle)
-  * This mode syncs faster than the multi-app mode.
-  
-* Multi App Mode
-
-  * This mode will use multiple, unique MPD apps: 
-    * `MPD (Playing)`
-    * `MPD (Paused)`
-    * `MPD` (Reserved for idle)
-  
-  * These app names will show up next to your name on the sidebar.
-  
-  * This mode updates slower than the single app mode.
 
 ---
 
@@ -90,7 +49,6 @@ Example: `mpd_discord_richpresence -h=211.111.111.112 -P=password -p=6606 --fork
 |`-P=PASSWORD`|The password sent to MPD after the connection has been established successfully. (Default is empty, therefore no password sent.)|
 |`--fork`|Forks the process into the background.|
 |`--no-idle`|Disables broadcasting of the idle state.|
-|`--use-multiple-apps`|Uses the Multi-App mode.|
 
 > ⚠️ discord-rpc [will not work](https://github.com/discordapp/discord-rpc/issues/213#issuecomment-410631101) if Discord has been installed through snap (Ubuntu Software). Please download and install Discord from the [homepage](https://discordapp.com/).
 

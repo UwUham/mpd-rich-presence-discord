@@ -11,10 +11,10 @@
 #include <cstdint>
 #include <discord_rpc.h>
 
-static const char* AppIdPlaying= "381948295830044683";
-static const char* AppIdPaused = "382303152327753739";
-static const char* AppIdIdle = "382302420073709568";
-static const char* AppIdMulti = "474605546457137157";
+//static const char* AppIdPlaying= "381948295830044683";
+//static const char* AppIdPaused = "382303152327753739";
+//static const char* AppIdIdle = "382302420073709568";
+static const char* AppIdMulti = "965222549585801256";
 
 struct AppState
 {
@@ -208,8 +208,8 @@ int main(int argc, char** args)
     if(isFlagSet(vecArgs, "--help") || isFlagSet(vecArgs, "-help") || isFlagSet(vecArgs, "help"))
     {
 #define LINE(what) std::cout << what << std::endl
-        LINE("MPD Rich Presence for Discord");
-        LINE("https://github.com/SSStormy/mpd-rich-presence-discord/");
+        LINE("MPD Rich Presence for Discord, forked by Basil");
+        LINE("https://github.com/UwUham/mpd-rich-presence-discord");
         LINE("");
         LINE("Arguments:");
         LINE("  -h=ADDDRESS                         the address where the MPD server (defaults to 127.0.0.1)");
@@ -218,7 +218,8 @@ int main(int argc, char** args)
         LINE("  --fork                              forks the process into the background.");
         LINE("  --no-idle                           Disables broadcasting of the idle state.");
         LINE("  --dont-broadcast-the-paused-state   Disables broadcasting of the paused state.");
-        LINE("  --use-multiple-apps                 Uses the Multi App mode.");
+        //LINE("  --use-multiple-apps                 Uses the Multi App mode.");
+        //LINE("basil was here lol");
 #undef LINE
         return 0;
     }
