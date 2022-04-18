@@ -63,8 +63,8 @@ PresencePayload makePresence(const AppState& app, const TrackInfo* track, bool i
             rp.smallImageKey = "pause-circle_png";
             rp.smallImageText = "Paused";
 
-            if(app.UseMultipleApps)
-                payload.AppId = AppIdPaused;
+            //if(app.UseMultipleApps)
+                //payload.AppId = AppIdPaused;
         }
         else
         {
@@ -72,8 +72,8 @@ PresencePayload makePresence(const AppState& app, const TrackInfo* track, bool i
             rp.smallImageKey = "play-circle_png";
             rp.smallImageText = "Playing";
 
-            if(app.UseMultipleApps)
-                payload.AppId = AppIdPlaying;
+            //if(app.UseMultipleApps)
+                //payload.AppId = AppIdPlaying;
         }
     }
     else
@@ -82,8 +82,8 @@ PresencePayload makePresence(const AppState& app, const TrackInfo* track, bool i
         rp.smallImageKey = "refresh-cw_png";
         rp.smallImageText = "Zzz...";
 
-        if(app.UseMultipleApps)
-            payload.AppId = AppIdIdle;
+        //if(app.UseMultipleApps)
+           //payload.AppId = AppIdIdle;
     }
 
     if(!app.UseMultipleApps)
