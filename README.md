@@ -1,8 +1,3 @@
-
-<center>
-    <img align="right" src="assets/readme/header.png">
-</center>
-
 <h1 align="center">
     <a href="https://github.com/SSStormy/mpd-rich-presence-discord">MPD Rich Presence for Discord</a>
 </h1>
