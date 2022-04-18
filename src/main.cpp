@@ -217,7 +217,7 @@ int main(int argc, char** args)
         LINE("  -P=PASSWORD                         the password to be sent after connection to the MPD server has been established in hopes of acquiring higher permissions. (default is empty, therfore no password sent.)");
         LINE("  --fork                              forks the process into the background.");
         LINE("  --no-idle                           Disables broadcasting of the idle state.");
-        LINE("  --dont-broadcast-the-paused-state   Disables broadcasting of the paused state.");
+        LINE("  --no-pause                          Disables broadcasting of the paused state.");
         //LINE("  --use-multiple-apps                 Uses the Multi App mode.");
         //LINE("basil was here lol");
 #undef LINE
@@ -230,7 +230,7 @@ int main(int argc, char** args)
 
     AppState state = {};
     state.BroadcastIdle     = !isFlagSet(vecArgs, "--no-idle");
-    state.BroadcastPaused   = !isFlagSet(vecArgs, "--dont-broadcast-the-paused-state");
+    state.BroadcastPaused   = !isFlagSet(vecArgs, "--no-pause");
     state.UseMultipleApps   = isFlagSet(vecArgs, "--use-multiple-apps");
 
     // forking

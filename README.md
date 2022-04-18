@@ -49,6 +49,7 @@ Example: `mpd_discord_richpresence -h=211.111.111.112 -P=password -p=6606 --fork
 |`-P=PASSWORD`|The password sent to MPD after the connection has been established successfully. (Default is empty, therefore no password sent.)|
 |`--fork`|Forks the process into the background.|
 |`--no-idle`|Disables broadcasting of the idle state.|
+|`--no-pause`|Disables broadcasting of the paused state.|
 
 > ⚠️ discord-rpc [will not work](https://github.com/discordapp/discord-rpc/issues/213#issuecomment-410631101) if Discord has been installed through snap (Ubuntu Software). Please download and install Discord from the [homepage](https://discordapp.com/).
 
