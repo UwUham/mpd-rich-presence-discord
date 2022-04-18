@@ -33,7 +33,7 @@
 
 ## Command Line Arguments
 
-Example: `mpd_discord_richpresence -h=211.111.111.112 -P=password -p=6606 --fork --no-idle --use-multiple-apps`
+Example: `mpd_discord_richpresence -h=211.111.111.112 -P=password -p=6606 --fork --no-idle --no-pause`
 
 | Paramater| Purpose  |
 |--|--|
